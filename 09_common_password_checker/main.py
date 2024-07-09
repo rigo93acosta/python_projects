@@ -6,7 +6,7 @@ def check_password(password: str):
     """
 
     # Open up the file with most common passwords
-    with open('passwords.text', 'r') as file:
+    with open('09_common_password_checker/passwords.text', 'r') as file:
         common_passwords: list[str] = file.read().splitlines()
 
     # If any of the words are equal to the password, return True
